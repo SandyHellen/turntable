@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../resource/css/index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="c-right" id="lottery">
+    <div class="lucky lucky-1">
+        <div class="lucky-img">
+            <img src="../resource/image/tv.png" key="1">
+        </div>
+        <div class="lucky-pName">电视机
+        </div>
+        <div class="active">
+        </div>
+    </div>
+    <div class="lucky lucky-2">
+        <div class="lucky-img">
+            <img src="../resource/image/kettle.png" key="2">
+        </div>
+        <div class="lucky-pName">热水壶
+        </div>
+        <div class="active">
+        </div>
+    </div>
+    <div class="lucky lucky-3">
+        <div class="lucky-pName">谢谢参与
+        </div>
+        <div class="active">
+        </div>
+    </div>
+    <div class="lucky lucky-4">
+        <div class="lucky-img">
+            <img src="../resource/image/phone.png" key="4">
+        </div>
+        <div class="lucky-pName">手机
+        </div>
+        <div class="active">
+        </div>
+    </div>
+    <div class="lucky coupon lucky-5">
+        <div class="lucky-img">
+            <img src="../resource/image/five.png" key="5">
+        </div>
+        <div class="lucky-pName">
+        </div>
+        <div class="active">
+        </div>
+    </div>
+    <div class="lucky  coupon lucky-6">
+        <div class="lucky-img">
+            <img src="../resource/image/twenty.png" key="6">
+        </div>
+        <div class="lucky-pName">
+        </div>
+        <div class="active">
+        </div>
+    </div>
+    <div class="lucky lucky-7">
+        <div class="lucky-img">
+            <img src="../resource/image/Oven.png" key="7">
+        </div>
+        <div class="lucky-pName">微波炉
+        </div>
+        <div class="active">
+        </div>
+    </div>
+    <div class="lucky coupon lucky-8">
+        <div class="lucky-img">
+            <img src="../resource/image/ten.png" key="8">
+        </div>
+        <div class="lucky-pName">
+        </div>
+        <div class="active">
+        </div>
+    </div>
+
+    <div class="luckyOption">
+        <div class="op-start">
+            开始抽奖
+            <p>您有<span class="bg-red" id="leftTimes">3</span>次抽奖机会</p>
+        </div>
+    </div>
+</div>
+<script src="../resource/js/jquery-1.7.2.min.js"></script>
+<script src="../resource/js/index.js"></script>
+<script>
+    $(function () {
+        turnTableInit.init({
+            clickBtn: '.op-start',
+            beforeFun: null,
+            callBack: null,
+            childClassName: '.lucky',
+            awardFun: null,
+            isReturn: true,
+            clickEvent: 'click',
+            currentClass: '.active',
+            cycle: 50,
+            speed: 20
+        });
+    })
+</script>
+</body>
+</html>
